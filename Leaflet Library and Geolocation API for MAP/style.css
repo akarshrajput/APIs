@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inconsolata", monospace;
+}
+.know-me {
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+.know-me a {
+  color: #9c36b5;
+  text-decoration: none;
+}
+.position-container {
+  font-size: 18px;
+  font-weight: 700;
+  width: 200px;
+  margin: 20px auto;
+}

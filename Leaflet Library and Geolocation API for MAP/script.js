@@ -5,6 +5,10 @@ navigator.geolocation.getCurrentPosition(
     console.log(latitude, longitude);
     const coords = [latitude, longitude];
     const map = L.map("map").setView(coords, 13);
+    const pos1 = document.querySelector(".position-1");
+    const pos2 = document.querySelector(".position-2");
+    pos1.textContent = `Latitude  : ${latitude}`;
+    pos2.textContent = `Longitude : ${longitude}`;
 
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution:
