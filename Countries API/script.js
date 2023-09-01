@@ -61,16 +61,16 @@ const countryData = function (country) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data[0]);
       renderCountry(data);
     });
 };
 const targetCountry = document.querySelector(".target-country");
 const searchButton = document.querySelector(".search-button");
+const copyright = document.querySelector(".copyright");
 
 searchButton.addEventListener("click", function (e) {
   e.preventDefault();
   const c = String(targetCountry.value);
   countryData(c);
-  e.preventDefault();
+  copyright.style.display = "block";
 });
