@@ -67,6 +67,7 @@ const countryData = function (country) {
       buffer.style.display = "none";
       errorNotFound.style.display = "none";
       renderCountry(data);
+      console.log(data);
     })
     .catch(function (error) {
       buffer.style.display = "none";

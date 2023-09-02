@@ -14,26 +14,27 @@
     />
   </head>
   <body>
-    <div class="buffering-overlay">
-      <div class="spinner"></div>
-    </div>
-    <section class="input">
-      <div class="input-flex">
-        <form class="input-form">
-          <div class="input-section">
-            <label>Enter country name</label>
-            <input class="target-country" type="text" />
-          </div>
-          <button class="search-button">Search</button>
-        </form>
+    <section class="country-card">
+      <div class="buffering-overlay">
+        <div class="spinner"></div>
       </div>
+      <section class="input">
+        <div class="input-flex">
+          <form class="input-form">
+            <div class="input-section">
+              <label>Enter country name</label>
+              <input class="target-country" type="text" />
+            </div>
+            <button class="search-button">Search</button>
+          </form>
+        </div>
+        <div>
+          <p class="error-notfound">Cannot find country</p>
+        </div>
+      </section>
       <div>
-        <p class="error-notfound">Cannot find country</p>
-      </div>
-    </section>
-    <div>
-      <div class="grid">
-        <!-- <div class="country">
+        <div class="grid">
+          <!-- <div class="country">
           <img class="c-flag" src="flag.png" />
           <div class="c-info">
             <p class="c-name">India</p>
@@ -79,10 +80,14 @@
             <p class="c-area">Rupee</p>
           </div>
         </div> -->
+        </div>
       </div>
-    </div>
-    <div class="footer">
-      <p class="copyright">Made by <a href="#">Akarsh</a> &#10084;</p>
-    </div>
+      <div class="footer">
+        <p class="copyright">Made by <a href="#">Akarsh</a> &#10084;</p>
+      </div>
+    </section>
+    <section class="country-open">
+      <div></div>
+    </section>
   </body>
 </html>

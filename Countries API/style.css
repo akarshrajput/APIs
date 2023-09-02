@@ -16,6 +16,9 @@ body {
   background-color: #fff;
   color: #212529;
 }
+/* .country-card {
+  display: none;
+} */
 .input-flex {
   display: flex;
   justify-content: center;
