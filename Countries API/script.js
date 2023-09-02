@@ -4,6 +4,7 @@ const people = document.querySelector(".c-people");
 const language = document.querySelector(".c-language");
 const currency = document.querySelector(".c-currency");
 const grid = document.querySelector(".grid");
+const errorNotFound = document.querySelector(".error-notfound");
 const renderCountry = function (data, className = "") {
   const html = `
   <div class="country">
@@ -56,12 +57,23 @@ const renderCountry = function (data, className = "") {
   grid.insertAdjacentHTML("beforeend", html);
 };
 const countryData = function (country) {
+  const buffer = document.querySelector(".buffering-overlay");
+  buffer.style.display = "block";
   fetch(`https://restcountries.com/v3.1/name/${country}`)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
+      buffer.style.display = "none";
+      errorNotFound.style.display = "none";
       renderCountry(data);
+    })
+    .catch(function (error) {
+      buffer.style.display = "none";
+      console.error("Error fetching data:", error);
+      if (error) {
+        errorNotFound.style.display = "block";
+      }
     });
 };
 const targetCountry = document.querySelector(".target-country");
