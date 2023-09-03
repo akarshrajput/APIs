@@ -118,6 +118,9 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
 }
+.footer {
+  margin-bottom: 4rem;
+}
 /************
 Media Queries
 ************/
