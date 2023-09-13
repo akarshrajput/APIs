@@ -163,6 +163,9 @@ Media Queries
   .search-button {
     font-size: 2rem;
   }
+  .spinner {
+    left: 45% !important;
+  }
 }
 /* Buffer */
 .buffering-overlay {
