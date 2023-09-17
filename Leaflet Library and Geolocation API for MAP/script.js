@@ -17,7 +17,7 @@ navigator.geolocation.getCurrentPosition(
 
     L.marker(coords)
       .addTo(map)
-      .bindPopup("A pretty CSS3 popup.<br> Easily customizable.")
+      .bindPopup(`${latitude} ${longitude}`)
       .openPopup();
   },
   function () {

@@ -2,23 +2,69 @@
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 62.5%;
+}
 body {
-  font-family: "Inconsolata", monospace;
+  font-family: "Poppins", sans-serif;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.navigation-bar {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 0 0;
+}
+.navigation-bar-container {
+  background-color: #fff;
+  padding: 0 1rem;
+  border-radius: 0.6rem;
+  border: 0.2rem solid #a1a1a1;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+.search-input {
+  outline: none;
+  padding: 1rem;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: inherit;
+  max-width: 15rem;
+  justify-self: start !important;
+}
+.original-map {
+  width: 100%;
+  height: 50rem;
 }
 .know-me {
   text-align: center;
-  font-family: "Inconsolata", monospace;
+  font-family: "Poppins", sans-serif;
   margin-top: 1rem;
   font-size: 18px;
   font-weight: 700;
+  font-weight: 500;
 }
 .know-me a {
   color: #9c36b5;
   text-decoration: none;
+  font-weight: 400;
 }
 .position-container {
   font-size: 18px;
   font-weight: 700;
   width: 200px;
   margin: 20px auto;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+.original-map {
+  border: 0.2rem solid #a1a1a1;
+  border-radius: 1rem;
+  margin-top: 2rem;
 }
